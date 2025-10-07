@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifólio</title>
+    <!-- CSS criadas por mim -->
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/inicio.css">
+    <link rel="stylesheet" href="css/sobre.css">
+    <link rel="stylesheet" href="css/habilidades.css">
+    <link rel="stylesheet" href="css/rodape.css">
+    <link rel="stylesheet" href="css/text-animation.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/projetos.css">
+</head>
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="header-name">
+                <h1>Joji_Aze</h1>
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="#inicio" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a href="#sobre" class="nav-link">Sobre</a></li>
+                    <li class="nav-item"><a href="#projetos" class="nav-link">Projetos</a></li>
+                    <li class="nav-item"><a href="#habilidades" class="nav-link">Habilidades</a></li>
+                </ul>
+            </div>
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="img/menu_white_36dp.svg" alt=""></button>
+            </div>
+        </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="#inicio" class="nav-link">Início</a></li>
+                <li class="nav-item"><a href="#sobre" class="nav-link">Sobre</a></li>
+                <li class="nav-item"><a href="#projetos" class="nav-link">Projetos</a></li>
+                <li class="nav-item"><a href="#habilidades" class="nav-link">Habilidades</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <section id="inicio">
+            <div class="inicio-conteudo typewriter">
+                <h1>Jorge Azevedo</h1>
+                    <p>Desenvolvedor Front-End</p>
+                <picture>
+                    <a class="inicio-link" href="https://github.com/jorgeazesouza" target="_blank"><img src="img/logo-github.svg" alt="Logo GitHub"></a>
+                    <a class="inicio-link" href="https://www.linkedin.com/in/jorge-aze/" target="_blank"><img src="img/logo-linkedin.svg" alt=""></a>
+                </picture>
+            </div>
+            <div>
+                <picture>
+                    <source media="(max-width: 500px)" srcset="img/minha-foto-pq.png">
+                    <img class="inicio-img-eu" src="img/minha-foto.png" alt=" Minha foto">
+                </picture>
+            </div>
+        </section>
+        <section id="sobre">
+            <h1>Sobre mim</h1>
+
+            <div class="sobre-paragrafos">
+                <p>Meu nome é Jorge Azevedo e sou apaixonado por tecnologia, com foco atual em desenvolvimento Front-End. Iniciei meus estudos em programação durante o curso de Jogos Digitais e, desde então, venho aprimorando minhas habilidades em HTML, CSS, JavaScript, Git e GitHub. Também tenho conhecimento em Python e estou expandindo meu aprendizado para frameworks como React, Angular e Node.js.</p>
+                <p>Busco crescer continuamente como desenvolvedor, contribuindo com projetos criativos que gerem valor. Estou sempre em busca de novos aprendizados e aberto a desafios na área de desenvolvimento web.</p>
+            </div>
+            
+            <div class="cv">
+                <img src="img/download-icon.svg" alt="icone de download">
+                <a href="arquivos/jorge-azevedo-cv.pdf" download="jorge-azevedo-cv.pdf" type="aplication/pdf">Currículo</a>
+            </div>
+        </section>
+        <section id="projetos">
+            <h1>Projetos</h1>
+            <div id="projetos-config">
+                <div class="projeto1">
+                    <a href="https://jorgeazesouza.github.io/projeto-andoid/" target="_blank">
+                        <picture>
+                            <source media="(max-width: 600px)" srcset="img/projeto-android-pq.png">
+                            <img src="img/projeto-android.png" alt="Projeto Android">
+                        </picture>
+                        <h2>Projeto Android</h2>
+                        <p>Projeto desenvolvido no Curso em Vídeo, para aplicar conceitos de HTML e CSS adaptáveis para diferentes dispositivos.</p>
+                    </a>
+                </div>
+                <div class="projeto1">
+                    <a href="https://jorgeazesouza.github.io/projeto-cordel/" target="_blank">
+                        <picture>
+                            <source media="(max-width: 600px)" srcset="img/projeto-cordel-pq.png">
+                            <img src="img/projeto-cordel.png" alt="Projeto Android">
+                        </picture>
+                        <h2>Projeto Cordel</h2>
+                        <p>Projeto desenvolvido no Curso em Vídeo, nesse projeto, pude explorar o efeito parallax para criar uma navegação mais dinâmica e atrativa.</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section id="habilidades">
+            <h1>Habilidades</h1>
+            <div id="habilidades-separar">
+                <div class="img">
+                    <div class="imagens-config">
+                        <div>
+                            <img class="html" src="img/logos-habilidades/html-logo.svg" alt="html-logo">
+                            <img class="css" src="img/logos-habilidades/css-logo.svg" alt="css-logo">
+                            <img class="javascript" src="img/logos-habilidades/javascript-logo.svg" alt="javascript-logo">
+                        </div>
+                        <div>
+                            <img class="python" src="img/logos-habilidades/python-logo.svg" alt="python-logo">
+                            <img class="git" src="img/logos-habilidades/git-logo.svg" alt="git-logo">
+                            <img class="github" src="img/logos-habilidades/github-logo.svg" alt="git-logo">
+                        </div>
+                    </div>
+                    <p id="hab-text">Passe o mouse por cima da imagem para saber mais.</p>
+                </div>
+        </section>
+    </main>
+    <footer id="rodape">
+        <p>© 2025 Jorge Azevedo – Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- JS criado por mim -->
+    <script src="js/script.js"></script>
+    <script src="js/logo.js"></script>
+</body>
+</html>

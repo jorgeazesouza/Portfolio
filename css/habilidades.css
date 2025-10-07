@@ -1,0 +1,133 @@
+#habilidades {
+    height: 500px;
+    background-image: linear-gradient(95deg, var(--cor1), var(--cor2));
+    padding: 2em;
+}
+
+#habilidades > h1 {
+    text-align: center;
+    font-size: 40px;
+    color: white;
+}
+
+#habilidades-separar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 4em;
+}
+
+.img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3em;
+}
+
+.imagens-config {
+    display: flex;
+    flex-direction: row;
+}
+
+.imagens-config > div {
+    padding-left: 5px;
+}
+
+.imagens-config > img {
+    margin-right: 30px;
+}
+
+.html {
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+    border-radius: 10px;
+}
+
+.html:hover {
+    box-shadow: 0px 0px 20px #ffffff94;
+    border-radius: 10px;
+}
+
+.css {
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+    border-radius: 10px;
+}
+
+.css:hover {
+    box-shadow: 0px 0px 20px #ffffff94;
+    border-radius: 10px;
+}
+
+.javascript {
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+    border-radius: 10px;
+}
+
+.javascript:hover {
+    box-shadow: 0px 0px 20px #ffffff94;
+    border-radius: 10px;
+}
+
+.python {
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+    border-radius: 10px;
+}
+
+.python:hover {
+    box-shadow: 0px 0px 20px #ffffff94;
+    border-radius: 10px;
+}
+
+.git {
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+    border-radius: 10px;
+}
+
+.git:hover {
+    box-shadow: 0px 0px 20px #ffffff94;
+    border-radius: 10px;
+}
+
+.github {
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+    border-radius: 10px;
+}
+
+.github:hover {
+    box-shadow: 0px 0px 20px #ffffff94;
+    border-radius: 10px;
+}
+
+.img > p {
+    text-align: justify;
+    color: white;
+    width: 746px;
+    text-align: center;
+    font-size: 22px;
+    line-height: 1;
+}
+
+@media screen and (max-width: 850px) {
+    .imagens-config {
+        display: flex;
+        flex-direction: column;
+    }
+    .img > p {
+        font-size: 1em;
+        width: 90vw;
+    }
+    #habilidades {
+    height: 600px;
+    background-image: linear-gradient(95deg, var(--cor1), var(--cor2));
+    padding: 2em;
+    }
+    #rodape > p {
+        font-size: 12px;
+    }
+}
